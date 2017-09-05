@@ -1,0 +1,112 @@
+.header {
+  width: 10rem;
+  height: 1.2rem;
+  text-align: center;
+  line-height: 1.2rem;
+  font-size: 17px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+[data-dpr="2"] .header {
+  font-size: 34px;
+}
+[data-dpr="2.5"] .header {
+  font-size: 43px;
+}
+[data-dpr="2.75"] .header {
+  font-size: 47px;
+}
+[data-dpr="3"] .header {
+  font-size: 51px;
+}
+[data-dpr="4"] .header {
+  font-size: 68px;
+}
+.header i {
+  width: 0.26666667rem;
+  height: 0.46666667rem;
+  position: absolute;
+  left: 0.4rem;
+  top: 0.37333333rem;
+}
+.header i img {
+  width: 100%;
+}
+.banner {
+  width: 10rem;
+  height: 3.73333333rem;
+}
+.banner ul li {
+  float: left;
+  width: 10rem;
+  height: 3.73333333rem;
+}
+.banner ul li img {
+  width: 100%;
+}
+.banner .swiper-pagination .swiper-pagination-bullet {
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: 0rem 0.1rem 0rem 0.1rem;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+.banner .swiper-pagination .swiper-pagination-bullet-active {
+  background: #0079BD;
+}
+.nav {
+  width: 10rem;
+  height: 2.8rem;
+}
+.nav a {
+  float: left;
+  width: 3.33333333rem;
+  text-align: center;
+}
+.nav a .showimg {
+  margin: 0.4rem 0rem 0.16rem 0rem;
+}
+.nav a .showimg img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.nav a .showtitle {
+  font-size: 14px;
+  line-height: 0.6rem;
+}
+[data-dpr="2"] .nav a .showtitle {
+  font-size: 28px;
+}
+[data-dpr="2.5"] .nav a .showtitle {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .nav a .showtitle {
+  font-size: 39px;
+}
+[data-dpr="3"] .nav a .showtitle {
+  font-size: 42px;
+}
+[data-dpr="4"] .nav a .showtitle {
+  font-size: 56px;
+}
+.nav a .showtitle span {
+  font-style: normal;
+  font-size: 16px;
+  color: #FD6020;
+  vertical-align: top;
+}
+[data-dpr="2"] .nav a .showtitle span {
+  font-size: 32px;
+}
+[data-dpr="2.5"] .nav a .showtitle span {
+  font-size: 40px;
+}
+[data-dpr="2.75"] .nav a .showtitle span {
+  font-size: 44px;
+}
+[data-dpr="3"] .nav a .showtitle span {
+  font-size: 48px;
+}
+[data-dpr="4"] .nav a .showtitle span {
+  font-size: 64px;
+}

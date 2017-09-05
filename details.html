@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>积分商城</title>
+    <link href="css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css">
+    <link href="css/details.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <script src="js/flexible.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <script>
+        window.onload=function(){
+            var mySwiper = new Swiper('.swiper-container',{
+                pagination: '.pagination',
+                loop:true,
+                pagination: '.swiper-pagination',
+                autoplay : 2000,
+                grabCursor: true,
+                paginationClickable: true,
+                autoplayDisableOnInteraction:false,
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <i><img src="img/return.png"></i>
+        积分商城
+    </div>
+    <div class="banner swiper-container">
+        <ul class="swiper-wrapper clearfix">
+            <li class="swiper-slide"><a><img src="img/rotation.png"></a></li>
+            <li class="swiper-slide"><a><img src="img/rotation.png"></a></li>
+            <li class="swiper-slide"><a><img src="img/rotation.png"></a></li>
+        </ul>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="nav clearfix">
+        <a class="nav-sub">
+            <div class="showimg"><img src="img/integral.png"></div>
+            <div class="showtitle">积分<span>1000</span></div>
+        </a>
+        <a class="nav-sub">
+            <div class="showimg"><img src="img/check.png"></div>
+            <div class="showtitle">每日签到</div>
+        </a>
+        <a class="nav-sub">
+            <div class="showimg"><img src="img/details.png"></div>
+            <div class="showtitle">积分明细</div>
+        </a>
+    </div>
+</body>
+</html>
