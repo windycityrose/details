@@ -8,19 +8,6 @@
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <script src="js/flexible.js"></script>
     <script src="js/swiper-3.4.2.min.js"></script>
-    <script>
-        /*window.onload=function(){
-            var mySwiper = new Swiper('.swiper-container',{
-                pagination: '.pagination',
-                loop:true,
-                pagination: '.swiper-pagination',
-                autoplay : 2000,
-                grabCursor: true,
-                paginationClickable: true,
-                autoplayDisableOnInteraction:false,
-            });
-        }*/
-    </script>
 </head>
 <body>
     <div class="header">
@@ -34,6 +21,17 @@
             <li class="swiper-slide"><a><img src="img/rotation.png"></a></li>
         </ul>
         <div class="swiper-pagination"></div>
+        <script>
+            var mySwiper = new Swiper('.swiper-container',{
+                pagination: '.pagination',
+                loop:true,
+                pagination: '.swiper-pagination',
+                autoplay : 2000,
+                grabCursor: true,
+                paginationClickable: true,
+                autoplayDisableOnInteraction:false,
+            });
+        </script>
     </div>
     <div class="nav clearfix">
         <a class="nav-sub">
