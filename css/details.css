@@ -39,12 +39,19 @@
   height: 3.73333333rem;
   margin: 0.04rem 0rem 0rem 0rem;
 }
+.banner ul {
+  width: 100%;
+}
 .banner ul li {
+  width: 100%;
   float: left;
-  width: 10rem;
   height: 3.73333333rem;
 }
-.banner ul li img {
+.banner ul li a {
+  width: 100%;
+  display: block;
+}
+.banner ul li a img {
   width: 100%;
 }
 .banner .swiper-pagination .swiper-pagination-bullet {
