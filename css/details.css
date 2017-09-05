@@ -71,6 +71,7 @@
 .nav {
   width: 10rem;
   height: 2.8rem;
+  border-bottom: 1px solid #000000;
 }
 .nav a {
   float: left;
