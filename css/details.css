@@ -4,7 +4,9 @@
   text-align: center;
   line-height: 1.2rem;
   font-size: 17px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 2px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 [data-dpr="2"] .header {
@@ -35,6 +37,7 @@
 .banner {
   width: 10rem;
   height: 3.73333333rem;
+  margin: 0.04rem 0rem 0rem 0rem;
 }
 .banner ul li {
   float: left;
