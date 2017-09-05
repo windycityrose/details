@@ -50,6 +50,10 @@
   margin: 0rem 0.1rem 0rem 0.1rem;
   background: rgba(255, 255, 255, 0.5);
   opacity: 1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
 }
 .banner .swiper-pagination .swiper-pagination-bullet-active {
   background: #0079BD;
@@ -93,7 +97,6 @@
   font-style: normal;
   font-size: 16px;
   color: #FD6020;
-  vertical-align: middle;
 }
 [data-dpr="2"] .nav a .showtitle span {
   font-size: 32px;
