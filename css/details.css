@@ -194,7 +194,7 @@
 }
 .filter {
   width: 10rem;
-  margin: 0.2rem 0rem 0.2rem 0rem;
+  margin: 0.2rem 0rem 0rem 0rem;
 }
 .filter-condition {
   width: 100%;
@@ -335,7 +335,7 @@
   height: 6.8rem;
   background: #fff;
   text-align: center;
-  margin: 0rem 0rem 0rem 0.18666667rem;
+  margin: 0.2rem 0rem 0rem 0.18666667rem;
 }
 .productitem img {
   width: 4.17333333rem;
@@ -385,7 +385,7 @@
   display: inline-block;
   width: 0.46666667rem;
   height: 0.46666667rem;
-  margin: 0rem 0.09333333rem 0rem 0rem;
+  margin: -0.10666667rem 0.09333333rem 0rem 0rem;
   vertical-align: middle;
 }
 .integral-num span img {
@@ -419,7 +419,4 @@
 }
 [data-dpr="4"] .exchange span {
   line-height: 116px;
-}
-.footer {
-  height: 1000px;
 }
