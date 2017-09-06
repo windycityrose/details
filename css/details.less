@@ -40,8 +40,9 @@
   .px2px(font-size,34);
   background: #FFFFFF;
   -webkit-box-shadow:0 2px 5px 10px rgba(0,0,0,0.10);
-  box-shadow: 0 2px 5px 10px rgba(0,0,0,0.10);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.10);
   position:relative;
+  z-index:100;
   i{
     .px2rem(width,20);
     .px2rem(height,35);
@@ -56,7 +57,6 @@
 .banner{
   .px2rem(width,750);
   .px2rem(height,280);
-  .mixin(3);
   ul{
     width:100%;
     li{
@@ -251,7 +251,7 @@
       background-size:contain;
     }
     .iconJJ{
-      background:url("../img/iconjj.png") no-repeat center center;
+      background:url("../img/iconJJ.png") no-repeat center center;
       background-size:contain;
     }
     .iconSM{
