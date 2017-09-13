@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transform实现旋转木马</title>
+    <style>
+        .demo{
+            padding:10px;
+        }
+        .stage_area{
+            width:900px;
+            min-height:100px;
+            margin:0 auto;
+            padding:100px 50px;
+            background:#f0f0f0;
+            box-shadow: inset 0 0 3px rgba(0,0,0,.35);
+            perspective:800px;
+            position:relative;
+        }
+        .container{
+            width:128px;
+            height:100px;
+            margin-left:-64px;
+            position:absolute;
+            left:50%;
+            transform-style:preserve-3d;
+        }
+        img{
+            width:128px;
+            height:80px;
+            position:absolute;
+            bottom:0;
+        }
+        img:nth-child(1){
+            transform:rotateY(0deg) translateZ(195.839px);
+        }
+        img:nth-child(2){
+            transform:rotateY(40deg) translateZ(195.839px);
+        }
+        img:nth-child(3){
+            transform:rotateY(80deg) translateZ(195.839px);
+        }
+        img:nth-child(4){
+            transform:rotateY(120deg) translateZ(195.839px);
+        }
+        img:nth-child(5){
+            transform:rotateY(160deg) translateZ(195.839px);
+        }
+        img:nth-child(6){
+            transform:rotateY(200deg) translateZ(195.839px);
+        }
+        img:nth-child(7){
+            transform:rotateY(240deg) translateZ(195.839px);
+        }
+        img:nth-child(8){
+            transform:rotateY(280deg) translateZ(195.839px);
+        }
+        img:nth-child(9){
+            transform:rotateY(320deg) translateZ(195.839px);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="demo">
+        <div class="stage_area">
+            <div class="container">
+                <img src="img/spike.png">
+                <img src="img/spike.png">
+                <img src="img/spike.png">
+                <img src="img/spike.png">
+                <img src="img/spike.png">
+                <img src="img/spike.png">
+                <img src="img/spike.png">
+                <img src="img/spike.png">
+                <img src="img/spike.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    window.onload=function(){
+        var n=0;
+        document.getElementsByTagName("img");
+        for(var i=0;i<document.getElementsByTagName("img").length;i++){
+            document.getElementsByTagName("img")[i].onclick=function(){
+                n+=-40
+                document.getElementsByClassName("container")[0].style.transition="all 1s";
+                document.getElementsByClassName("container")[0].style.transform="rotateY("+n+"deg)";
+            }
+        }
+
+    }
+</script>

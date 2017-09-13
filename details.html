@@ -1,108 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>积分商城</title>
-    <link href="css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css">
-    <link href="css/details.css" rel="stylesheet" type="text/css">
-    <link href="css/reset.css" rel="stylesheet" type="text/css">
-    <script src="js/flexible.js"></script>
-    <script src="js/swiper-3.4.2.min.js"></script>
-    <script src="js/details.js"></script>
-</head>
-<body>
-    <div class="header">
-        <i><img src="img/return.png"></i>
-        积分商城
-    </div>
-    <div class="banner swiper-container">
-        <ul class="swiper-wrapper clearfix">
-            <li class="swiper-slide"><a><img src="img/rotation.png"></a></li>
-            <li class="swiper-slide"><a><img src="img/rotation.png"></a></li>
-            <li class="swiper-slide"><a><img src="img/rotation.png"></a></li>
-        </ul>
-        <div class="swiper-pagination"></div>
-        <script>
-            var mySwiper = new Swiper('.swiper-container',{
-                pagination: '.pagination',
-                loop:true,
-                pagination: '.swiper-pagination',
-                autoplay : 2000,
-                grabCursor: true,
-                paginationClickable: true,
-                autoplayDisableOnInteraction:false,
-            });
-        </script>
-    </div>
-    <div class="nav clearfix">
-        <a class="nav-sub">
-            <div class="showimg"><img src="img/integral.png"></div>
-            <div class="showtitle">积分<span>1000</span></div>
-        </a>
-        <a class="nav-sub">
-            <div class="showimg"><img src="img/check.png"></div>
-            <div class="showtitle">每日签到</div>
-        </a>
-        <a class="nav-sub">
-            <div class="showimg"><img src="img/details.png"></div>
-            <div class="showtitle">积分明细</div>
-        </a>
-    </div>
-    <div class="integralactivity">
-        <h6 class="activity-title">积分活动</h6>
-        <div class="activity-view clearfix">
-            <div class="spike"><a><img src="img/spike.png"></a></div>
-            <div class="turntable"><a><img src="img/turntable.png"></a></div>
-            <div class="explosion"><a><img src="img/explosion.png"></a></div>
-        </div>
-    </div>
-    <div class="filter">
-        <div class="filter-condition clearfix">
-            <div class="pullBtn">默认</div>
-            <div class="pullBtn"><span>按积分</span><div class="triangle_down"></div></div>
-            <div class="pullBtn"><span>按热度</span><div class="triangle_down"></div></div>
-            <div class="filterBtn"><span>筛选</span><span class="checkIcon"></span></div>
-        </div>
-        <ul class="iconBar clearfix">
-            <li>
-                <a class="typeBindTap">
-                    <span class="ico iconLP"></span><span>全部</span>
-                </a>
-            </li>
-            <li>
-                <a class="typeBindTap">
-                    <span class="ico iconJJ"></span>
-                    <span>家居日常</span>
-                </a>
-            </li>
-            <li>
-                <a class="typeBindTap">
-                    <span class="ico iconSM"></span>
-                    <span>数码电器</span>
-                </a>
-            </li>
-            <li>
-                <a class="typeBindTap">
-                    <span class="ico iconKQ"></span>
-                    <span>门票卡券</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="productList clearfix">
-        <div class="productitem">
-            <img src="img/thermometer.png">
-            <p class="productdescription">西铁城电子体温计CT</p>
-            <div class="integral-num"><span><img src="img/integralicon.png"></span>4900</div>
-            <div class="exchange"><span>立即兑换</span></div>
-        </div>
-        <div class="productitem">
-            <img src="img/thermometer.png">
-            <p class="productdescription">西铁城电子体温计CT</p>
-            <div class="integral-num"><span><img src="img/integralicon.png"></span>4900</div>
-            <div class="exchange"><span>立即兑换</span></div>
-        </div>
-    </div>
-    <div class="footer"></div>
-</body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>积分明细</title>
+		<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+		<link href="css/details.css" rel="stylesheet" type="text/css" /> 
+		<script src="js/flexible.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<i><img src="img/return.png"></i>
+			积分明细
+		</div>
+		<div class="banner">
+			<div class="container">
+				<div class="integralshow clearfix">
+					<div class="integralimg"><img src="img/integraldetails.png"></div>
+					<div class=integralnum>3000</div>
+				</div>
+			</div>
+			<div class="rule"><a>获取积分规则</a></div>
+		</div>
+		<div class="integralsorting">
+			<div class="integral-item clearfix">
+				<div class="time">
+					<span class="day">周五</span>
+					<span class="date">09.23</span>
+				</div>
+				<div class="action">每日签到</div>
+				<div class="bill">
+					<div class="income"><span>+10</span></div>
+					<div class="settlement"><span>结算 : 20</span></div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

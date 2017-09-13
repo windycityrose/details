@@ -1,0 +1,172 @@
+@brem:75rem;
+.px2rem(@name, @px){
+    @{name}: @px / 75 * 1rem;
+}
+.mixin (@top:0;@right:0;@bot:0;@left:0){
+    margin:@top / 75 * 1rem @right /75*1rem @bot /75*1rem @left /75*1rem;
+}
+.paddingmixin (@top:0;@right:0;@bot:0;@left:0){
+  padding:@top / 75 * 1rem @right /75*1rem @bot /75*1rem @left /75*1rem;
+}
+.backmixin(@x:0;@y:0;){
+  background-size:@x/75*1rem @y/75*1rem;
+}
+.px2px(@name, @px){
+    @{name}: round(@px / 2) * 1px;
+  [data-dpr="2"] & {
+      @{name}: @px * 1px;
+  }
+  // for mx3
+  [data-dpr="2.5"] & {
+      @{name}: round(@px * 2.5 / 2) * 1px;
+  }
+  // for 小米note
+  [data-dpr="2.75"] & {
+      @{name}: round(@px * 2.75 / 2) * 1px;
+  }
+  [data-dpr="3"] & {
+      @{name}: round(@px / 2 * 3) * 1px
+  }
+  // for 三星note4
+  [data-dpr="4"] & {
+      @{name}: @px * 2px;
+  }
+}
+body{
+    background:#fff;
+}
+.header{
+  .px2rem(width,750);
+  .px2rem(height,90);
+  text-align:center;
+  .px2rem(line-height,90);
+  .px2px(font-size,38);
+  background: #FFFFFF;
+  -webkit-box-shadow:0 2px 5px 10px rgba(0,0,0,0.10);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.10);
+  position:relative;
+  z-index:100;
+  i{
+    .px2rem(width,20);
+    .px2rem(height,35);
+    position:absolute;
+    .px2rem(left,30);
+    .px2rem(top,28);
+    img{
+      width:100%;
+    }
+  }
+}
+.banner{
+    .productimg{
+       padding:20/@brem 125/@brem 50/@brem;
+        img{
+            width:500/@brem;
+            height:500/@brem;
+        } 
+    }
+    p{
+       padding:0 0 0 30/@brem;
+       .px2px(font-size,28);
+       line-height:40/@brem; 
+    }
+    .modle{
+        color:#000;
+        margin:0 0 20/@brem 0;
+    }
+    .reward{
+        color:#F9602F;
+    }
+    .address{
+        padding:0 0 0 30/@brem;
+        height:88/@brem;
+        line-height:88/@brem;
+        border-top:1px solid #DDD;
+        border-bottom:1px solid #DDD;
+        .px2px(font-size,24);
+        color:#666;
+        margin:22/@brem 0 0 0;
+    }
+    h3{
+        font-size: 24/@brem;
+        color: #666;
+        line-height:33/@brem;
+        margin:22/@brem 0 16/@brem 0;
+        padding:0 0 0 30/@brem;
+    }
+    .description{
+        .px2px(font-size,24);
+        color: #666;
+        line-height: 40/@brem;
+    }
+    .showimg{
+        width:706/@brem;
+        height:381/@brem;
+        margin:33/@brem auto 0;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+}
+.footer{
+    width:750/@brem;
+    height:90/@brem;
+    position:fixed;
+    left:0;
+    bottom:100/@brem;
+    background:#F9602F;
+    text-align:center;
+    line-height:90/@brem;
+    .px2px(font-size,32);
+    color:#fff;
+    a{
+       display:block;
+    }
+}
+.index_footer {
+    height:100/@brem;
+    border-top:1px solid #DDDDDD;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+}
+
+    .index_footer a {
+        display: block;
+        text-decoration: none;
+        width: 20%;
+        height: 2.9rem;
+        padding: 16/@brem 0rem;
+        float: left;
+        text-align: center;
+        position: relative;
+    }
+
+    .index_footer label {
+        display: block;
+        position: absolute;
+        width: 1.3rem;
+        height: 1.3rem;
+        background: #EF412E;
+        color: #fff;
+        line-height: 1.3rem;
+        text-align: center;
+        border-radius: 1.3rem;
+        top: 0.3rem;
+        right: 1rem;
+    }
+
+
+
+    .index_footer a img {
+        width: 34.7/@brem;
+        vertical-align:baseline;
+    }
+
+    .index_footer a span {
+        display: block;
+        color: #999999;
+    }

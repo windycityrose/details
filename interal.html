@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>积分商城</title>
+    <link href="css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css">
+    <link href="css/mui.min.css" rel="stylesheet" type="text/css">
+    <link href="css/mui.picker.min.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/interal.css" rel="stylesheet" type="text/css">
+    <script src="js/flexible.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <script src="js/zepto.js"></script>
+    <script src="js/interal.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/mui.picker.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <i><img src="img/return.png"></i>
+    积分商城
+</div>
+<div class="banner swiper-container">
+    <ul class="swiper-wrapper clearfix">
+        <li class="swiper-slide"><a><img src="img/rotation.png"></a></li>
+        <li class="swiper-slide"><a><img src="img/rotation.png"></a></li>
+        <li class="swiper-slide"><a><img src="img/rotation.png"></a></li>
+    </ul>
+    <div class="swiper-pagination"></div>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: '.pagination',
+            loop: true,
+            pagination: '.swiper-pagination',
+            autoplay: 2000,
+            grabCursor: true,
+            paginationClickable: true,
+            autoplayDisableOnInteraction: false,
+        });
+    </script>
+</div>
+<div class="nav clearfix">
+    <a class="nav-sub">
+        <div class="showimg"><img src="img/integral.png"></div>
+        <div class="showtitle">积分<span>1000</span></div>
+    </a>
+    <a class="nav-sub">
+        <div class="showimg"><img src="img/check.png"></div>
+        <div class="showtitle">每日签到</div>
+    </a>
+    <a class="nav-sub">
+        <div class="showimg"><img src="img/details.png"></div>
+        <div class="showtitle">积分明细</div>
+    </a>
+</div>
+<div class="integralactivity">
+    <h6 class="activity-title">积分活动</h6>
+    <div class="activity-view clearfix">
+        <div class="spike"><a><img src="img/spike.png"></a></div>
+        <div class="turntable"><a><img src="img/turntable.png"></a></div>
+        <div class="explosion"><a><img src="img/explosion.png"></a></div>
+    </div>
+</div>
+<div class="filter">
+    <div class="filter-condition clearfix">
+        <div class="pullBtn active">默认</div>
+        <div class="pullBtn"><span>按积分</span>
+            <div class="triangle_down"></div>
+        </div>
+        <div class="pullBtn"><span>按热度</span>
+            <div class="triangle_down"></div>
+        </div>
+        <div class="filterBtn" id="filterBtn"><span>筛选</span><span class="checkIcon"></span></div>
+    </div>
+    <ul class="iconBar clearfix">
+        <li>
+            <a class="typeBindTap">
+                <span class="ico iconLP"></span>
+                <span class="ac">全部</span>
+            </a>
+        </li>
+        <li>
+            <a class="typeBindTap">
+                <span class="ico iconJJ"></span>
+                <span>家居日常</span>
+            </a>
+        </li>
+        <li>
+            <a class="typeBindTap">
+                <span class="ico iconSM"></span>
+                <span>数码电器</span>
+            </a>
+        </li>
+        <li>
+            <a class="typeBindTap">
+                <span class="ico iconKQ"></span>
+                <span>门票卡券</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="productList clearfix">
+    <div class="productitem">
+        <img src="img/thermometer.png">
+        <p class="productdescription">西铁城电子体温计CT</p>
+        <div class="integral-num"><span><img src="img/integralicon.png"></span>4900</div>
+        <div class="exchange"><span>立即兑换</span></div>
+    </div>
+    <div class="productitem">
+        <img src="img/thermometer.png">
+        <p class="productdescription">西铁城电子体温计CT</p>
+        <div class="integral-num"><span><img src="img/integralicon.png"></span>4900</div>
+        <div class="exchange"><span>立即兑换</span></div>
+    </div>
+    <div class="productitem">
+        <img src="img/thermometer.png">
+        <p class="productdescription">西铁城电子体温计CT</p>
+        <div class="integral-num"><span><img src="img/integralicon.png"></span>4900</div>
+        <div class="exchange"><span>立即兑换</span></div>
+    </div>
+    <div class="productitem">
+        <img src="img/thermometer.png">
+        <p class="productdescription">西铁城电子体温计CT</p>
+        <div class="integral-num"><span><img src="img/integralicon.png"></span>4900</div>
+        <div class="exchange"><span>立即兑换</span></div>
+    </div>
+    <div class="productitem">
+        <img src="img/thermometer.png">
+        <p class="productdescription">西铁城电子体温计CT</p>
+        <div class="integral-num"><span><img src="img/integralicon.png"></span>4900</div>
+        <div class="exchange"><span>立即兑换</span></div>
+    </div>
+    <div class="productitem">
+        <img src="img/thermometer.png">
+        <p class="productdescription">西铁城电子体温计CT</p>
+        <div class="integral-num"><span><img src="img/integralicon.png"></span>4900</div>
+        <div class="exchange"><span>立即兑换</span></div>
+    </div>
+</div>
+<div class="footer">已经没有更多了哦</div>
+<div class="modle" style=display:none></div>
+<div class="checkin" style=display:none>
+	<span class="xximg"><img src="img/xx.png"></span>
+	<div class="checkinimg">
+		<span class="integralimg"><img src="img/integraldetails.png"></span><span class="integraltitle">签到成功</span>
+	</div>
+	<p>恭喜获得<i>10个积分</i></p>
+</div>
+<div class="checkin" style=display:none>
+	<span class="xximg"><img src="img/xx.png"></span>
+	<div class="checkinimg">
+		<span class="integralimg"><img src="img/checkin.png"></span><span class="integraltitle">已签到</span>
+	</div>
+	<p>您已签到，明天再来哦</p>
+</div>
+<script>
+    var picker = new mui.PopPicker();
+	picker.setData([{
+	    value: "first",
+	    text: "0-20000"
+	}, {
+	    value: "second",
+	    text: "20000-50000"
+	}, {
+	    value: "third",
+	    text: "50000-100000"
+	}, {
+	    value: "fourth",
+	    text: "100000-200000"
+	}, {
+	    value: "fifth",
+	    text: "大于200000"
+	}])
+	picker.pickers[0].setSelectedIndex(4, 2000);
+	picker.pickers[0].setSelectedValue('fourth', 3000);
+	var filterBtn=document.getElementById("filterBtn");
+	filterBtn.addEventListener("tap",function(){
+		picker.show(function(getSelectedItems){
+   
+		}) 
+	})
+</script>
+</body>
+</html>
