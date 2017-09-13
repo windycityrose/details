@@ -57,6 +57,9 @@ body {
     }
   }*/
 }
+.banner img {
+  width: 100%;
+}
 .swiper-pagination .swiper-pagination-bullet {
   width: 0.2rem;
   height: 0.2rem;
