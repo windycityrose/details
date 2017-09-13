@@ -1,17 +1,36 @@
 /**
  * Created by 李华东 on 2017/9/6.
  */
-/*window.onload=function(){
-    function hengpin(){
-        if(window.orientation==90||window.orientation==-90){
-            window.location.reload();
+window.onload=function(){
+    function orient() {
+
+        //alert('gete');
+
+        if (window.orientation == 0 || window.orientation == 180) {
+
+            $("body").attr("class", "portrait");
+
+            orientation = 'portrait';
+
+            return false;
+
         }
-        if(window.orientation==0){
-            window.location.reload();
+
+        else if (window.orientation == 90 || window.orientation == -90) {
+
+            $("body").attr("class", "landscape");
+
+            orientation = 'landscape';
+
+
+
+            return false;
+
         }
+
     }
-    window.addEventListener("onorientationchange"  in window  ? "orientationchange" : "resize",hengpin,false);
-};*/
+
+};
 $(function(){
    $('.filter .pullBtn').on("click",function(){
        if($(this).find("div").hasClass("sx")){
