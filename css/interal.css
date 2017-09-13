@@ -42,20 +42,11 @@ body {
   width: 10rem;
   height: 3.73333333rem;
 }
-.banner ul {
-  width: 100%;
-}
 .banner ul li {
-  width: 100%;
   float: left;
-  height: 3.73333333rem;
 }
 .banner ul li a {
-  width: 100%;
   display: block;
-}
-.banner ul li a img {
-  width: 100%;
 }
 .swiper-pagination .swiper-pagination-bullet {
   width: 0.2rem;
